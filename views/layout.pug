@@ -1,0 +1,82 @@
+doctype html
+html 
+    head
+        title Knowledgebase
+        link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.css')
+        link(rel='stylesheet', href='/css/style.css') 
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')   
+    body
+        nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.fixed-top
+            .container
+                a.navbar-brand(href='/') VSU ACM
+                button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    span.navbar-toggler-icon
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.ml-auto
+                        li.nav-item.dropdown
+                            a#navbarDropdownBlog.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                                | About
+                            .dropdown-menu.dropdown-menu-right(aria-labelledby='navbarDropdownBlog')
+                                a.dropdown-item(href='/abouts/about') About
+                                a.dropdown-item(href='/abouts/mission') Mission
+                                a.dropdown-item(href='/abouts/contact') Contact Us
+                        li.nav-item.dropdown
+                            a#navbarDropdownBlog.nav-link.dropdown-toggle(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                                | Resources
+                            .dropdown-menu.dropdown-menu-right(aria-labelledby='navbarDropdownBlog')
+                                a.dropdown-item(href='/resources/guides') Guides
+                                a.dropdown-item(href='/resources/links') Links
+                                a.dropdown-item(href='/resources/podcasts') Podcasts
+                                a.dropdown-item(href='/resources/videos') Videos
+                        br
+        //nav.navbar.navbar-expand-md.navbar-dark.bg-dark
+            a.navbar-brand(href='/') Knowledgebase
+            button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarsExampleDefault', aria-controls='navbarsExampleDefault', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarsExampleDefault.collapse.navbar-collapse
+                ul.navbar-nav.mr-auto
+                    if user
+                        li.nav-item
+                            a.nav-link(href='/articles/add') Add Article
+                        li.nav-item 
+                            a.nav-link(href="/maps/map") Map
+                        li.nav-item 
+                            a.nav-link(href="/maps/createMarker") Create Marker
+                    else
+                        li.nav-item 
+                            a.nav-link(href="/maps/map") Map
+                ul.navbar-nav.navbar-right
+                    if user
+                        li.nav-item 
+                            a.nav-link(href='/users/logout') Logout
+                    else
+                        li.nav-item
+                            a.nav-link(href='/users/register') Register
+                        li.nav-item
+                            a.nav-link(href='/users/login') Login
+                    li.nav-item.dropdown
+                        a#dropdown01.nav-link.dropdown-toggle(href='http://example.com', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Login
+                        .dropdown-menu(aria-labelledby='dropdown01')
+                            a.dropdown-item(href='#') Login
+                            a.dropdown-item(href='#') Another action
+                            a.dropdown-item(href='#') Something else here
+                form.form-inline.my-2.my-lg-0
+                    input.form-control.mr-sm-2(type='text', placeholder='Search', aria-label='Search')
+                    button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+
+        .container
+            != messages('message', locals)
+            if errors
+                each error, i in errors
+                    div(class='alert alert-danger') #{error.msg}
+            block content
+            br
+            hr
+            footer
+                p Copyright &copy; 2017
+        script(src='https://code.jquery.com/jquery-3.2.1.min.js')   
+        script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDop98aSgISi4ZlcFKrg-BXeH9ZH31UK2I&callback=initMap')     
+        script(src='/bower_components/bootstrap/dist/js/bootstrap.js')
+        script(src='/js/main.js')
+        
+        

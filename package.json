@@ -1,0 +1,37 @@
+{
+  "name": "nodekb",
+  "version": "1.0.0",
+  "description": "Simple knowledgebase app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Equinox32/nodekb.git"
+  },
+  "author": "Tyler Angelier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Equinox32/nodekb/issues"
+  },
+  "homepage": "https://github.com/Equinox32/nodekb#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "express": "^4.16.2",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.6",
+    "express-validator": "^5.0.0",
+    "firebase": "^4.10.0",
+    "firebase-admin": "^5.9.0",
+    "firebase-functions": "^0.8.1",
+    "mongoose": "^5.0.6",
+    "nodemon": "^1.17.2",
+    "npm": "^5.8.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pug": "^2.0.0-rc.4"
+  }
+}

@@ -1,0 +1,145 @@
+extends layout
+
+block content
+    header
+        #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+            ol.carousel-indicators
+                li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+                li(data-target='#carouselExampleIndicators', data-slide-to='1')
+                li(data-target='#carouselExampleIndicators', data-slide-to='2')
+            .carousel-inner(role='listbox')
+                // Slide One - Set the background image for this slide in the line below
+                .carousel-item.active(style="background-image: url('/img/carousel1.jpg')")
+                    .carousel-caption.d-none.d-md-block
+                        h3 First Slide
+                        p This is a description for the first slide.
+                // Slide Two - Set the background image for this slide in the line below
+                .carousel-item(style="background-image: url('/img/carousel2.jpeg')")
+                    .carousel-caption.d-none.d-md-block
+                        h3 Second Slide
+                        p This is a description for the second slide.
+                // Slide Three - Set the background image for this slide in the line below
+                .carousel-item(style="background-image: url('/img/carousel3.jpeg')")
+                    .carousel-caption.d-none.d-md-block
+                        h3 Third Slide
+                        p This is a description for the third slide.
+            a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+                span.carousel-control-prev-icon(aria-hidden='true')
+                span.sr-only Previous
+            a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+                span.carousel-control-next-icon(aria-hidden='true')
+                span.sr-only Next
+    // Page Content
+    .container
+        h1.my-6 Welcome to Valdosta State University Association for Computing Machinery
+        // Marketing Icons Section
+        .row
+            .col-lg-12.mb-12
+                .card.h-100
+                    h4.card-header ACM VSU Mission
+                    .card-body
+                        p.card-text
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque. Nam eleifend eget dolor sit amet mollis. Nunc feugiat nisi consequat elementum tristique. Sed lobortis, dui ac auctor venenatis, arcu lorem ultricies tellus, vel fermentum enim nisl quis magna. Morbi mi nisi, maximus quis maximus quis, mollis sed leo. Etiam in enim non diam commodo lacinia. Integer eleifend eleifend ex, vel consectetur sapien iaculis in. Mauris urna sem, fringilla vitae tortor eu, luctus condimentum eros. Proin imperdiet tincidunt urna nec gravida. Duis at hendrerit odio, sed auctor enim. Fusce interdum neque iaculis neque lobortis, eget facilisis urna scelerisque. Quisque lectus ante, fringilla non volutpat id, tempor sed turpis. Cras sed consectetur nulla.
+                    .card-footer
+                        a.btn.btn-primary(href='/abouts/mission') Mission Statement
+            //- .col-lg-4.mb-4
+            //-     .card.h-100
+            //-         h4.card-header Card Title
+            //-         .card-body
+            //-             p.card-text
+            //-                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis ipsam eos, nam perspiciatis natus commodi similique totam consectetur praesentium molestiae atque exercitationem ut consequuntur, sed eveniet, magni nostrum sint fuga.
+            //-         .card-footer
+            //-             a.btn.btn-primary(href='#') Learn More
+            //- .col-lg-4.mb-4
+            //-     .card.h-100
+            //-         h4.card-header Card Title
+            //-         .card-body
+            //-             p.card-text
+            //-                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.
+            //-         .card-footer
+            //-             a.btn.btn-primary(href='#') Learn More
+        // /.row
+        // Portfolio Section
+        h2 ACM VSU Achievements
+        .row
+            .col-lg-4.col-sm-6.portfolio-item
+                .card.h-100
+                    a(href='#')
+                        img.card-img-top(src='http://via.placeholder.com/700x400', alt='')
+                    .card-body
+                        h4.card-title
+                            a(href='#') Achievement One
+                        p.card-text
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!
+            .col-lg-4.col-sm-6.portfolio-item
+                .card.h-100
+                    a(href='#')
+                        img.card-img-top(src='http://via.placeholder.com/700x400', alt='')
+                    .card-body
+                        h4.card-title
+                            a(href='#') Achievement Two
+                        p.card-text
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+            .col-lg-4.col-sm-6.portfolio-item
+                .card.h-100
+                    a(href='#')
+                        img.card-img-top(src='http://via.placeholder.com/700x400', alt='')
+                    .card-body
+                        h4.card-title
+                            a(href='#') Achievement Three
+                        p.card-text
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque, odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis mollitia recusandae vero vel quam!
+            .col-lg-4.col-sm-6.portfolio-item
+                .card.h-100
+                    a(href='#')
+                        img.card-img-top(src='http://via.placeholder.com/700x400', alt='')
+                    .card-body
+                        h4.card-title
+                            a(href='#') Achievement Four
+                        p.card-text
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+            .col-lg-4.col-sm-6.portfolio-item
+                .card.h-100
+                    a(href='#')
+                        img.card-img-top(src='http://via.placeholder.com/700x400', alt='')
+                    .card-body
+                        h4.card-title
+                            a(href='#') Achievement Five
+                        p.card-text
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
+            .col-lg-4.col-sm-6.portfolio-item
+                .card.h-100
+                    a(href='#')
+                        img.card-img-top(src='http://via.placeholder.com/700x400', alt='')
+                    .card-body
+                        h4.card-title
+                            a(href='#') Achievement Six
+                        p.card-text
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.
+        // /.row
+        // Features Section
+        .row
+            .col-lg-6
+                h2 Modern Business Features
+                p The Modern Business template by Start Bootstrap includes:
+                ul
+                    li
+                        strong Bootstrap v4
+                    li jQuery
+                    li Font Awesome
+                    li Working contact form with validation
+                    li Unstyled page elements for easy customization
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.
+            .col-lg-6
+                img.img-fluid.rounded(src='http://via.placeholder.com/700x450', alt='')
+        // /.row
+        hr
+        // Call to Action Section
+        .row.mb-4
+            .col-md-8
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.
+            .col-md-4
+                a.btn.btn-lg.btn-secondary.btn-block(href='#') Call to Action
+    // /.container

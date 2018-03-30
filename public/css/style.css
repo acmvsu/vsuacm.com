@@ -1,0 +1,45 @@
+/* This is for the navbar */
+body {
+    padding-top: 60px;
+}
+
+.navbar {
+    background-color: #a90b24;
+    border-bottom: 4px solid black;
+}
+
+.alert-error{
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
+.alert-success_msg {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.card {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 56px;
+    }
+}
+
+.carousel-item {
+height: 65vh;
+min-height: 300px;
+background: no-repeat center center scroll;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+.portfolio-item {
+margin-bottom: 30px;
+}
