@@ -19,4 +19,9 @@ router.get('/contact', (req, res) => {
 });
 
 
+// GET Constition
+router.get('/constition', (req, res) => {
+    res.render('constition');
+});
+
 module.exports = router;
