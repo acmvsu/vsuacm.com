@@ -8,10 +8,6 @@ router.get('/about', (req, res) => {
     res.render('about');
 });
 
-// GET Mission
-router.get('/mission', (req, res) => {
-    res.render('mission');
-});
 
 // GET Contact
 router.get('/contact', (req, res) => {
