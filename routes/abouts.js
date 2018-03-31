@@ -20,8 +20,8 @@ router.get('/contact', (req, res) => {
 
 
 // GET Constition
-router.get('/constition', (req, res) => {
-    res.render('constition');
+router.get('/constitution', (req, res) => {
+    res.render('constitution');
 });
 
 module.exports = router;
