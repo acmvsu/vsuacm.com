@@ -2,7 +2,7 @@ extends layout
 
 block content
     .container
-        .col-md-5
+        .div.mx-auto
             .form-area
             form(role='form')
                 br(style='clear:both')
@@ -17,4 +17,5 @@ block content
                 input#subject.form-control(type='text', name='subject', placeholder='Subject', required='')
                 .form-group
                 textarea#message.form-control(type='textarea', placeholder='Message', maxlength='140', rows='7')
-                //button#submit.btn.btn-primary.pull-right(type='button', name='submit') Submit Form
+                .div.pt-2
+                button#submit.btn.btn-primary.pull-right.float-md-right(type='button', name='submit') Contact
